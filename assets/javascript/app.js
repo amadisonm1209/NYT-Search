@@ -6,8 +6,6 @@ $(SEARCH BUTTON).on("click", function() {
     // var numOfRecords = $("#number-records").val("data-value");
     var startYear = $("#start-year").val();
     var endYear = $("#end-year").val();
-
-    console.log(startYear);
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q= " + article + "&api-key=YTXAL0t6SaZ5CeCklPyheH2Iql5nqfb0";
 
 
