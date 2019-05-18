@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="https://code.jquery.com/jquery-2.2.3.js"
         integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>NY</title>
 </head>
 
@@ -18,32 +19,31 @@
     
 </header>
     <form>
+
+        <div class=<"search-container">
+          <label for="search">Search Term: </label>
+          <input type="search" class="userInput" id="search" >
+        </div>
+        <div class="number-container">
+          <label for="exampleFormControlSelect1">Number of Records to Retrieve: </label>
+          <select id="number-records">
+            <option data-value: 1>1</option>
+            <option data-value: 2>2</option>
+            <option data-value: 3 >3</option>
+            <option data-value: 4 >4</option>
+            <option data-value: 5 >5</option>
+          </select>
+        </div>
+ 
+        <div class="start-year-container">
+          <label for="exampleFormControlTextarea1">Start Year(Optional): </label>
+          <textarea class="form-control" id="start-year" rows="2"></textarea>
+        </div>
         <div class="form-group">
-            <div class="col-md-12">
-            <label for="exampleFormControlInput1">Search Term: </label>
-            <input type="search" class="form-control" id="exampleFormControlInput1">
-        </div>
-    </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Number of Records to Retrieve: </label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>5</option>
-                <option>10</option>
-                <option>25</option>
-                <option>100</option>
-            </select>
-        </div>
+            <label for="exampleFormControlTextarea1">End Year(Optional):</label>
+            <textarea class="form-control" id="end-year" rows="3"></textarea>
+          </div>
 
-        <div>
-            <label for="exampleFormControlInput1">Start Year: </label>
-
-            <input type="search" class="form-control" id="exampleFormControlInput1">
-        </div>
-        <div>
-            <label for="exampleFormControlInput1">Ends Year: </label>
-
-            <input type="search" class="form-control" id="exampleFormControlInput1">
-        </div>
         <div>
             <button type="submit" class="btn btn-primary">Sign in</button>
         </div>
